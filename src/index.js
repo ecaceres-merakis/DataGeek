@@ -1,17 +1,21 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom/client'; // Usar createRoot de React 18
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(
+// Seleccionar el elemento raíz
+const rootElement = document.getElementById('root');
+
+// Crear la raíz usando createRoot
+const root = ReactDOM.createRoot(rootElement);
+
+// Renderizar el componente principal
+root.render(
   <React.StrictMode>
     <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+  </React.StrictMode>
 );
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
+// Configuración del service worker (opcional)
 serviceWorker.unregister();

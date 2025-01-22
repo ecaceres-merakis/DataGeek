@@ -33,8 +33,8 @@ export const Gallery = props => {
     <div id="portfolio" className="text-center">
       <div className="container">
         <div className="section-title">
-          <h2>Gallery</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed dapibus leonec.</p>
+          <h2>Tecnologías</h2>
+          <p>Estas son las tecnologías clave que utilizamos para ofrecer soluciones de alta calidad a nuestros clientes.</p>
         </div>
         <div className="row">
           <div className="portfolio-items">

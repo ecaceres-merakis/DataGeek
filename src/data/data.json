@@ -1,57 +1,56 @@
 {
     "Header": {
-
-        "title": "We are a Landing Page",
-        "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sed commodo nibh ante facilisis bibendum."
-
+        "title": "Datageek",
+        "paragraph": "Utilizamos tu data para transformar tu negocio. Ofrecemos soluciones avanzadas de análisis de datos que impulsan el rendimiento y la toma de decisiones estratégicas."
     },
     "About": {
-        "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "paragraph": "En Datageek, somos una empresa con amplia experiencia en el análisis y manejo de datos. Nos especializamos en convertir datos en valor tangible para tu negocio. Nuestro equipo está formado por profesionales altamente capacitados, comprometidos con la entrega de soluciones de alta calidad y adaptadas a tus necesidades.",
         "Why": [
-            "Lorem ipsum dolor",
-            "Tempor incididunt",
-            "Lorem ipsum dolor",
-            "Incididunt ut labore"
+            "Implementación de proyectos de análisis de datos a medida.",
+            "Equipo de profesionales con experiencia comprobada.",
+            "Compromiso con el desarrollo de soluciones de alta calidad.",
+            "Foco en la generación de valor para tu negocio."
         ],
         "Why2": [
-            "Aliquip ex ea commodo",
-            "Lorem ipsum dolor",
-            "Exercitation ullamco",
-            "Lorem ipsum dolor"
+            "Soluciones escalables adaptadas al crecimiento de tu empresa.",
+            "Metodologías ágiles para una implementación eficiente.",
+            "Enfoque en la mejora del rendimiento empresarial.",
+            "Integración total con plataformas existentes.",
+            "Analítica predictiva para decisiones informadas.",
+            "Respaldo de un equipo técnico altamente calificado."
         ]
     },
-    "Services": [{
-            "icon": "fa fa-wordpress",
-            "name": "Lorem ipsum dolor",
-            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+    "Services": [
+        {
+            "icon": "fa fa-cogs",
+            "name": "Desarrollo de ETLs (End-to-End)",
+            "text": "Diseñamos e implementamos procesos ETL eficientes para gestionar y transformar tus datos de manera integral."
         },
         {
-            "icon": "fa fa-cart-arrow-down",
-            "name": "Consectetur adipiscing",
-            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+            "icon": "fa fa-bar-chart",
+            "name": "Implementación de Dashboards",
+            "text": "Creamos paneles de control interactivos y personalizados para optimizar la visualización y análisis de datos clave."
         },
         {
-            "icon": "fa fa-cloud-download",
-            "name": "Lorem ipsum dolor",
-            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+            "icon": "fa fa-cloud-upload",
+            "name": "Migraciones de Bases de Datos a la Nube",
+            "text": "Ofrecemos servicios de migración seguros y eficientes para llevar tus datos a plataformas en la nube como AWS, Azure o Google Cloud."
         },
         {
-            "icon": "fa fa-language",
-            "name": "Consectetur adipiscing",
-            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+            "icon": "fa fa-line-chart",
+            "name": "Analítica Avanzada de Datos",
+            "text": "Aplicamos técnicas avanzadas de analítica para descubrir insights valiosos que impulsen el crecimiento de tu negocio."
         },
         {
-            "icon": "fa fa-plane",
-            "name": "Lorem ipsum dolor",
-            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+            "icon": "fa fa-database",
+            "name": "Optimización de Bases de Datos",
+            "text": "Mejoramos la velocidad, integridad y estructura de tus bases de datos para un rendimiento óptimo."
         },
         {
-            "icon": "fa fa-pie-chart",
-            "name": "Consectetur adipiscing",
-            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+            "icon": "fa fa-shield",
+            "name": "Seguridad y Gobernanza de Datos",
+            "text": "Implementamos políticas y herramientas de seguridad para proteger tus datos y garantizar el cumplimiento normativo."
         }
-
-
     ],
     "Testimonials": [{
             "img": "img/testimonials/01.jpg",
@@ -105,12 +104,12 @@
         }
     ],
     "Contact": {
-        "address": "4321 California St, San Francisco, CA 12345 ",
-        "phone": "+1 123 456 1234",
-        "email": "info@company.com",
-        "facebook": "fb.com",
-        "twitter": "twitter.com",
-        "youtube": "youtube.com"
+        "address": "Av. Innovación 123, Lima, Perú",
+        "phone": "+51 987 654 321",
+        "email": "contacto@datageek.com",
+        "facebook": "facebook.com/datageek",
+        "twitter": "twitter.com/datageek",
+        "youtube": "youtube.com/datageek"
     },
     "Features": [{
             "icon": "fa fa-comments-o",

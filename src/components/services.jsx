@@ -3,10 +3,9 @@ export const Services = (props) => {
     <div id='services' className='text-center'>
       <div className='container'>
         <div className='section-title'>
-          <h2>Our Services</h2>
+          <h2>Servicios</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed
-            dapibus leonec.
+            Ofrecemos soluciones innovadoras y personalizadas para optimizar la gestión y análisis de datos en tu organización.
           </p>
         </div>
         <div className='row'>

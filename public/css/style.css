@@ -65,12 +65,23 @@ hr {
 	border: 0;
 }
 /* Navigation */
+.barra-blanca {
+	background-color: white;
+	height: 100px; /* Ajusta la altura */
+	width: 100%;
+	position: fixed; /* Se fija en su posición */
+	top: 0; /* Siempre en la parte superior */
+	left: 0;
+	z-index: 1050; /* Asegura que esté por delante del menú */
+	clip-path: polygon(0 0, 50% 0, 45% 100%, 0% 100%); /* Corte inclinado */
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15); /* Sombra para mejor visibilidad */
+  }
 #menu {
 	padding: 15px;
 	transition: all 0.8s;
 }
 #menu.navbar-default {
-	background-color: #fff;
+	background-color: rgb(226, 226, 226);
 	border-color: rgba(231, 231, 231, 0);
 	box-shadow: 0 0 10px rgba(0,0,0,0.15)
 }
@@ -195,6 +206,10 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 }
 .intro .overlay {
 	background: rgba(0,0,0,0.2);
+	background-image: url('../img/Fondo_Header.png');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
 }
 .intro h1 {
 	font-family: 'Raleway', sans-serif;

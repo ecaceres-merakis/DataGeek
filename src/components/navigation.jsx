@@ -1,6 +1,33 @@
+import logo from "./imgs/Logo_Unico.PNG";
 export const Navigation = (props) => {
   return (
-    <nav id='menu' className='navbar navbar-default navbar-fixed-top'>
+    <>
+      {/* Barra blanca superpuesta */}
+      <div className="barra-blanca"
+        style={{
+          position: "fixed", // Fija la barra blanca
+          zIndex: 1050, // Asegura que esté frente al menú
+        }}
+      >
+        <a href="#page-top">
+        <img
+              src={logo}
+              alt="DataGeek Logo"
+              style={{
+                height: "70px",
+                width: "auto",
+                marginTop: "15px", // Subir la imagen
+                marginLeft: "30px", // Mover la imagen a la derecha
+              }}
+            />
+        </a>
+      </div>
+
+    <nav id='menu' className='navbar navbar-default navbar-fixed-top'
+      style={{
+        zIndex: 1000, // Asegura que esté detrás de la barra blanca
+      }}
+    >
       <div className='container'>
         <div className='navbar-header'>
           <button
@@ -15,8 +42,8 @@ export const Navigation = (props) => {
             <span className='icon-bar'></span>{' '}
             <span className='icon-bar'></span>{' '}
           </button>
-          <a className='navbar-brand page-scroll' href='#page-top'>
-            My Landing Page
+          <a className='navbar-brand page-scroll'>
+          
           </a>{' '}
         </div>
 
@@ -26,23 +53,24 @@ export const Navigation = (props) => {
         >
           <ul className='nav navbar-nav navbar-right'>
             <li>
-              <a href='#features' className='page-scroll'>
-                Features
-              </a>
-            </li>
-            <li>
-              <a href='#about' className='page-scroll'>
-                About
-              </a>
-            </li>
-            <li>
               <a href='#services' className='page-scroll'>
-                Services
+                Servicios
               </a>
             </li>
             <li>
               <a href='#portfolio' className='page-scroll'>
-                Gallery
+                Galería
+              </a>
+            </li>
+            <li>
+              <a href='#about' className='page-scroll'>
+                Sobre Nosotros
+              </a>
+            </li>
+            {/*
+            <li>
+              <a href='#features' className='page-scroll'>
+                Features
               </a>
             </li>
             <li>
@@ -50,10 +78,18 @@ export const Navigation = (props) => {
                 Testimonials
               </a>
             </li>
+            */}
+            <li>
+            
+              <a href='#contact' className='page-scroll'>
+                Contacto
+              </a>
+            </li>
             
           </ul>
         </div>
       </div>
     </nav>
-  )
-}
+    </>
+  );
+};
