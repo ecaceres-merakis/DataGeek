@@ -1,3 +1,9 @@
+import PowerBI from "./imgs/PowerBI.png";
+import Tableau from "./imgs/Tableau.PNG";
+import Spark from "./imgs/Spark.png";
+import Looker from "./imgs/Looker.PNG";
+import Domo from "./imgs/Domo.PNG";
+import QlikSense from "./imgs/Qlik Sense.PNG";
 import React, { useState, useCallback } from "react";
 import ImageViewer from "react-simple-image-viewer";
 
@@ -6,15 +12,12 @@ export const Gallery = props => {
   const [isViewerOpen, setIsViewerOpen] = useState(false);
 
   const data = [
-    { thumb: "img/portfolio/01-small.jpg", title: "Lorem Ipsum1" },
-    { thumb: "img/portfolio/02-small.jpg", title: "Lorem Ipsum2" },
-    { thumb: "img/portfolio/03-small.jpg", title: "Lorem Ipsum3" },
-    { thumb: "img/portfolio/04-small.jpg", title: "Lorem Ipsum4" },
-    { thumb: "img/portfolio/05-small.jpg", title: "Lorem Ipsum5" },
-    { thumb: "img/portfolio/06-small.jpg", title: "Lorem Ipsum6" },
-    { thumb: "img/portfolio/07-small.jpg", title: "Lorem Ipsum7" },
-    { thumb: "img/portfolio/08-small.jpg", title: "Lorem Ipsum8" },
-    { thumb: "img/portfolio/09-small.jpg", title: "Lorem Ipsum9" }
+    { thumb: PowerBI, title: "PowerBI" },
+    { thumb: Tableau, title: "Tableau" },
+    { thumb: Spark, title: "Spark" },
+    { thumb: Looker, title: "Google Looker" },
+    { thumb: Domo, title: "Domo" },
+    { thumb: QlikSense, title: "Qlik Sense" }
   ];
 
   const images = data.map(obj => obj.thumb.replace("-small", "-large"));

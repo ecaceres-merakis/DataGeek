@@ -1,0 +1,108 @@
+/* Menú lateral */
+.contact-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 35%;
+    background-color: #5ca9fb;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    z-index: 1100;
+    border-radius: 15px; /* Esquinas redondeadas */
+    transition: width 0.5s ease; /* Animación de apertura/cierre */
+  }
+  
+  .contact-menu.open {
+    width: 300px;
+  }
+  
+  .contact-menu-content {
+    position: relative;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
+    color: white; /* Color del texto blanco */
+  }
+  
+  .contact-menu-content h2 {
+    font-family: 'Raleway', sans-serif;
+    color: whitesmoke;
+    text-transform: uppercase;
+  }
+  
+  .contact-menu-content ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .contact-menu-content li {
+    margin: 10px 0;
+  }
+  
+  .contact-menu-content a {
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  .contact-menu-content a:hover {
+    text-decoration: underline;
+  }
+  
+  .close-button {
+    margin-top: auto;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+  }
+
+  .close-icon {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    color: white;
+    font-size: 24px; /* Tamaño de la "X" */
+    font-weight: bold;
+    cursor: pointer; /* Cambia el cursor a una mano */
+    z-index: 1200; /* Asegúrate de que esté sobre el resto del contenido */
+    opacity: 0; /* Comienza invisible */
+    transition: opacity 0.5s ease; /* La opacidad se anima */
+  }
+  
+  .close-icon.visible {
+    opacity: 1; /* Aparece suavemente al abrir el menú */
+  }
+  
+  .close-icon:hover {
+    color: #ccc; /* Cambia de color al pasar el ratón */
+  }
+  
+  .contact-item {
+    display: flex;
+    flex-direction: column; /* Ícono y texto en columna */
+    align-items: flex-start; /* Alineación hacia la izquierda */
+    margin-bottom: 20px; /* Separación entre elementos */
+  }
+  
+  .contact-item span {
+    display: flex;
+    align-items: center; /* Centra el ícono horizontalmente */
+    font-size: 18px; /* Tamaño del ícono */
+    margin-bottom: 10px; /* Espacio entre el ícono y el texto */
+  }
+  
+  .contact-item i {
+    margin-right: 10px; /* Separación del ícono con el texto */
+  }
+  
+  .contact-item p {
+    margin: 0;
+    font-size: 16px; /* Tamaño del texto */
+    line-height: 1.5; /* Espaciado entre líneas */
+  }

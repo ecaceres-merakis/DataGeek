@@ -10,6 +10,7 @@
     "@tsparticles/react": "^3.0.0",
     "chokidar": "^3.5.1",
     "emailjs-com": "^2.6.4",
+    "framer-motion": "^12.0.3",
     "gsap": "^3.12.7",
     "particles-bg": "^2.5.5",
     "react": "^19.0.0",

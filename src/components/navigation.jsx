@@ -1,5 +1,13 @@
+import { useState } from "react";
+import ContactMenu from "./ContactMenu"; // Importar el menú lateral
 import logo from "./imgs/Logo_Unico.PNG";
+
 export const Navigation = (props) => {
+  const [isContactMenuOpen, setIsContactMenuOpen] = useState(false);
+
+  const toggleContactMenu = () => {
+    setIsContactMenuOpen(!isContactMenuOpen); // Alternar entre abierto/cerrado
+  };
   return (
     <>
       {/* Barra blanca superpuesta */}
@@ -80,8 +88,15 @@ export const Navigation = (props) => {
             </li>
             */}
             <li>
-            
-              <a href='#contact' className='page-scroll'>
+                <a
+                  href="#contact"
+                  className="page-scroll"
+                  onClick={(e) => {
+                    e.preventDefault(); // Evita el scroll automático
+                    toggleContactMenu();
+                    document.querySelector("#contact").scrollIntoView({ behavior: "smooth" });
+                  }}
+                >
                 Contacto
               </a>
             </li>
@@ -90,6 +105,12 @@ export const Navigation = (props) => {
         </div>
       </div>
     </nav>
+    <ContactMenu
+        isOpen={isContactMenuOpen}
+        closeMenu={toggleContactMenu}
+      />
     </>
   );
 };
+
+export default Navigation;

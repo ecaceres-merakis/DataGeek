@@ -15,9 +15,7 @@
             "Soluciones escalables adaptadas al crecimiento de tu empresa.",
             "Metodologías ágiles para una implementación eficiente.",
             "Enfoque en la mejora del rendimiento empresarial.",
-            "Integración total con plataformas existentes.",
-            "Analítica predictiva para decisiones informadas.",
-            "Respaldo de un equipo técnico altamente calificado."
+            "Integración total con plataformas existentes."
         ]
     },
     "Services": [
@@ -109,7 +107,8 @@
         "email": "contacto@datageek.com",
         "facebook": "facebook.com/datageek",
         "twitter": "twitter.com/datageek",
-        "youtube": "youtube.com/datageek"
+        "youtube": "youtube.com/datageek",
+        "linkedin": "linkedin.com/datageek"
     },
     "Features": [{
             "icon": "fa fa-comments-o",

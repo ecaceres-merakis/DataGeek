@@ -97,6 +97,7 @@ export const Contact = (props) => {
             </div>
           </div>
           <div className='col-md-3 col-md-offset-1 contact-info'>
+            {/*
             <div className='contact-item'>
               <h3>Informacion de Contacto</h3>
               <p>
@@ -114,6 +115,7 @@ export const Contact = (props) => {
                 {props.data ? props.data.phone : 'loading'}
               </p>
             </div>
+            
             <div className='contact-item'>
               <p>
                 <span>
@@ -121,12 +123,21 @@ export const Contact = (props) => {
                 </span>{' '}
                 {props.data ? props.data.email : 'loading'}
               </p>
+              <p>
+                <span>
+                  <i className='fa fa-linkedin'></i> LinkedIn
+                </span>
+                {props.data ? props.data.linkedin : 'loading'}
+              </p>
+              
             </div>
+            */}
           </div>
           <div className='col-md-12'>
             <div className='row'>
               <div className='social'>
                 <ul>
+                  {/*
                   <li>
                     <a href={props.data ? props.data.facebook : '/'}>
                       <i className='fa fa-facebook'></i>
@@ -142,6 +153,13 @@ export const Contact = (props) => {
                       <i className='fa fa-youtube'></i>
                     </a>
                   </li>
+                  
+                  <li>
+                    <a href={props.data ? props.data.linkedin : '/'}>
+                      <i className="fa fa-linkedin"></i>
+                    </a>
+                  </li>
+                  */}
                 </ul>
               </div>
             </div>
