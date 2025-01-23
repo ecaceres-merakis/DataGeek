@@ -88,7 +88,7 @@ hr {
 #menu a.navbar-brand {
 	font-family: 'Raleway', sans-serif;
 	font-size: 24px;
-	font-weight: 700; 
+	font-weight: 700;
 	color: #333;
 	text-transform: uppercase;
 }
@@ -353,15 +353,45 @@ header .intro-text {
 #portfolio {
 	padding: 100px 0;
 }
+.portfolio-items {
+	display: flex; /* Flexbox para alinear los elementos */
+	flex-wrap: wrap; /* Permite que los elementos se ajusten en varias filas */
+	gap: 10px; /* Espaciado uniforme entre los elementos */
+	justify-content: center; /* Centra los elementos horizontalmente */
+  }
+  
 .portfolio-item {
-	margin: 1px -15px 0 -14px;
-	padding: 0;
-}
+	flex: 1 1 calc(100%); /* Tres elementos por fila con margen */
+	max-width: calc(100%); /* Evita que superen el ancho necesario */
+	box-sizing: border-box; /* Incluye padding y border en el tamaño */
+  }
 .portfolio-item .hover-bg {
 	overflow: hidden;
 	position: relative;
 	margin: 0;
+	aspect-ratio: 20 / 14; /* Mantén una relación de aspecto uniforme */
 }
+.portfolio-item img {
+	width: 100%; /* Ocupa todo el ancho del contenedor */
+	height: 100%; /* Ocupa todo el alto del contenedor */
+	object-fit: cover; /* Recorta la imagen sin deformarla */
+	border-radius: 10px; /* Opcional: Bordes redondeados */
+  }
+
+/* Media queries para pantallas más pequeñas */
+@media (max-width: 768px) {
+	.portfolio-item {
+	  flex: 1 1 calc(50% - 20px); /* Dos columnas en pantallas pequeñas */
+	  max-width: calc(50% - 20px);
+	}
+  }
+  
+  @media (max-width: 480px) {
+	.portfolio-item {
+	  flex: 1 1 100%; /* Una columna en pantallas muy pequeñas */
+	  max-width: 100%;
+	}
+  }
 .hover-bg .hover-text {
 	position: absolute;
 	text-align: center;
@@ -373,6 +403,7 @@ header .intro-text {
 	width: 100%;
 	opacity: 0;
 	transition: all 0.5s;
+	border-radius: 10px; /* Opcional: Bordes redondeados */
 }
 .hover-bg .hover-text>h4 {
 	opacity: 0;
