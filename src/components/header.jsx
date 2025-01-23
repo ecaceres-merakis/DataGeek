@@ -147,7 +147,7 @@ export const Header = (props) => {
                   href="#services"
                   className="btn btn-custom btn-lg page-scroll"
                 >
-                  Más Información
+                  Descubre nuestros servicios
                 </a>
               </div>
             </div>
