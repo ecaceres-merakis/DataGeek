@@ -1,7 +1,6 @@
 {
   "name": "landingpage-react-template",
   "private": true,
-  "homepage": "https://ecaceres-merakis.github.io/DataGeek",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
