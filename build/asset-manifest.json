@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/DataGeek/static/css/main.8d0d22f9.css",
+    "main.js": "/DataGeek/static/js/main.4d234e26.js",
+    "static/media/Nosotros.png": "/DataGeek/static/media/Nosotros.1b155c33efa93afd10e9.png",
+    "static/media/Qlik Sense.PNG": "/DataGeek/static/media/Qlik Sense.2338ccb8e6572f1e0110.PNG",
+    "static/media/Domo.PNG": "/DataGeek/static/media/Domo.e7bdc64f08f486324531.PNG",
+    "static/media/PowerBI.png": "/DataGeek/static/media/PowerBI.c513e1cb3386854cd909.png",
+    "static/media/Tableau.PNG": "/DataGeek/static/media/Tableau.6ba23b2096754664cc05.PNG",
+    "static/media/Looker.PNG": "/DataGeek/static/media/Looker.b7972770a61d2d5f234f.PNG",
+    "static/media/Spark.png": "/DataGeek/static/media/Spark.94a61d9b704ae8f88728.png",
+    "static/media/Logo_Unico.PNG": "/DataGeek/static/media/Logo_Unico.f47889b6eb58b90522da.PNG",
+    "index.html": "/DataGeek/index.html",
+    "main.8d0d22f9.css.map": "/DataGeek/static/css/main.8d0d22f9.css.map",
+    "main.4d234e26.js.map": "/DataGeek/static/js/main.4d234e26.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8d0d22f9.css",
+    "static/js/main.4d234e26.js"
+  ]
+}
