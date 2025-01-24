@@ -94,7 +94,7 @@ export const Navigation = (props) => {
                   onClick={(e) => {
                     e.preventDefault(); // Evita el scroll automático
                     toggleContactMenu();
-                    document.querySelector("#contact").scrollIntoView({ behavior: "smooth" });
+                    //document.querySelector("#contact").scrollIntoView({ behavior: "smooth" });
                   }}
                 >
                 Contacto
