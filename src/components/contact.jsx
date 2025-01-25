@@ -22,17 +22,19 @@ export const Contact = (props) => {
     
     emailjs
       .sendForm(
-        'YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', e.target, 'YOUR_USER_ID'
+        'service_6zmxttn', 'template_v7r51n6', e.target, 'n-J_BtS-4SHTmXUVa'
       )
       .then(
         (result) => {
-          console.log(result.text)
-          clearState()
+          console.log('Correo enviado:', result.text);
+          alert('¡Mensaje enviado con éxito!');
+          clearState();
         },
         (error) => {
-          console.log(error.text)
+          console.error('Error al enviar el mensaje:', error.text);
+          alert('Ocurrió un error al enviar el mensaje. Inténtalo de nuevo.');
         }
-      )
+      );
   }
   return (
     <div>
@@ -51,13 +53,14 @@ export const Contact = (props) => {
                   <div className='col-md-6'>
                     <div className='form-group'>
                       <input
-                        type='text'
-                        id='name'
-                        name='name'
-                        className='form-control'
-                        placeholder='Nombre'
+                        type="text"
+                        id="name"
+                        name="name" // Coincide con {{from_name}} en el template
+                        className="form-control"
+                        placeholder="Nombre"
                         required
                         onChange={handleChange}
+                        value={name}
                       />
                       <p className='help-block text-danger'></p>
                     </div>
@@ -65,13 +68,14 @@ export const Contact = (props) => {
                   <div className='col-md-6'>
                     <div className='form-group'>
                       <input
-                        type='email'
-                        id='email'
-                        name='email'
-                        className='form-control'
-                        placeholder='Email'
+                        type="email"
+                        id="email"
+                        name="email" // Coincide con {{reply_to}} en el template
+                        className="form-control"
+                        placeholder="Correo Electrónico"
                         required
                         onChange={handleChange}
+                        value={email}
                       />
                       <p className='help-block text-danger'></p>
                     </div>
@@ -79,13 +83,14 @@ export const Contact = (props) => {
                 </div>
                 <div className='form-group'>
                   <textarea
-                    name='message'
-                    id='message'
-                    className='form-control'
-                    rows='4'
-                    placeholder='Mensaje'
+                    name="message" // Coincide con {{message}} en el template
+                    id="message"
+                    className="form-control"
+                    rows="4"
+                    placeholder="Mensaje"
                     required
                     onChange={handleChange}
+                    value={message}
                   ></textarea>
                   <p className='help-block text-danger'></p>
                 </div>
