@@ -16,7 +16,14 @@ const ContactMenu = ({ isOpen, closeMenu}) => {
                         <i className="fa fa-envelope-o"></i>
                     </span>
                     <p>{contactData.email || "Cargando..."}</p>
+                </div>{/*Necesito ahora para el contacto de numero de Whastapp*/}
+                <div className="contact-item">
+                    <span>
+                        <i className="fa fa-whatsapp"></i>
+                    </span>
+                    <p>{contactData.phone || "Cargando..."}</p>
                 </div>
+
                 {/*<button className="close-button" onClick={closeMenu}>
                 Cerrar
                 </button>*/}

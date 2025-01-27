@@ -8,6 +8,7 @@ import { Gallery } from './components/gallery'
 import { Testimonials } from './components/testimonials'
 import { Footer } from './components/footer'
 import { Contact } from "./components/contact";
+import WhatsAppButton from "./components/WhatsAppButton";
 import JsonData from './data/data.json'
 import SmoothScroll from 'smooth-scroll'
 
@@ -34,6 +35,7 @@ const App = () => {
       {/* <Testimonials data={landingPageData.Testimonials} /> */}
       <Contact data={landingPageData.Contact} />
       <Footer data={landingPageData.Footer}/>
+      <WhatsAppButton />
     </div>
   )
 }
