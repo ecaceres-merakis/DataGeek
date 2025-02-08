@@ -68,7 +68,7 @@ hr {
 .barra-blanca {
 	background-color: white;
 	height: 100px; /* Ajusta la altura */
-	width: 100%;
+	width: 30%;
 	position: fixed; /* Se fija en su posición */
 	top: 0; /* Siempre en la parte superior */
 	left: 0;
@@ -81,7 +81,7 @@ hr {
 	transition: all 0.8s;
 }
 #menu.navbar-default {
-	background-color: rgb(226, 226, 226);
+	background: linear-gradient(to right,#134ab0  0%, #5ca9fb 100%);
 	border-color: rgba(231, 231, 231, 0);
 	box-shadow: 0 0 10px rgba(0,0,0,0.15)
 }
@@ -91,13 +91,13 @@ hr {
 	font-weight: 700;
 	color: #333;
 	text-transform: uppercase;
-}
+}	
 #menu.navbar-default .navbar-nav > li > a {
-	font-family: 'Lato', sans-serif;
+	font-family: 'Raleway', sans-serif;
 	text-transform: uppercase;
-	color: black;
+	color: whitesmoke;
 	font-size: 16px;
-	font-weight: 400;
+	font-weight: 600;
 	padding: 8px 2px;
 	border-radius: 0;
 	margin: 9px 20px 0 20px;
@@ -485,7 +485,7 @@ header .intro-text {
 /* Contact Section */
 #contact {
 	padding: 100px 0 60px 0;
-	background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
+	background: linear-gradient(to right, #134ab0 0%, #5ca9fb 100%);
 	color: rgba(255,255,255,.75);
 }
 #contact .section-title {
