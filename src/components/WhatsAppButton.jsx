@@ -1,7 +1,7 @@
 import React from "react";
 
 const WhatsAppButton = () => {
-  const phoneNumber = "51930959841"; // Reemplaza con tu número de WhatsApp
+  const phoneNumber = "51974508797"; // Reemplaza con tu número de WhatsApp
   const message = "¡Hola! Me gustaría más información."; // Mensaje predeterminado
 
   const handleWhatsAppClick = () => {
